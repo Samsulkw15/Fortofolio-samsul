@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navbar Transparan</title>
+
+    <!-- fungsi untuk style sebuah halaman html -->
+    <style>
+
+        /* fungsi adalah untuk membersihkan halaman */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* fungsi untuk memerikan dekorasi pada a */
+        a {
+            text-decoration: none;
+        }
+
+
+        /* Style untuk body */
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        /* Navbar style */
+        nav {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            padding: 15px;
+            background-color: rgba(0, 0, 0, 0);
+            /* Transparan */
+            transition: background-color 0.3s ease;
+            /* Transisi smooth untuk perubahan warna */
+            z-index: 1000;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 50px;
+
+        }
+
+        .conte {
+            margin-top: 20px;
+            /* Memberikan ruang untuk navbar yang tetap di atas */
+            padding: 20px;
+            height: 650px;
+            /* Untuk membuat halaman cukup panjang untuk scroll */
+            background: #f6ba3f;
+        }
+
+        .cont{
+            margin-top: 20px;
+            /* Memberikan ruang untuk navbar yang tetap di atas */
+            padding: 20px;
+            height: 650px;
+            /* Untuk membuat halaman cukup panjang untuk scroll */
+            background: #50c0ea;
+        }
+
+        .con {
+            margin-top: 20px;
+            /* Memberikan ruang untuk navbar yang tetap di atas */
+            padding: 20px;
+            height: 650px;
+            /* Untuk membuat halaman cukup panjang untuk scroll */
+            background: #7dbb94;
+        }
+
+        .list {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        li {
+            margin: 22px;
+        }
+
+        a.logo {
+            font-size: 20px;
+            font-weight: 600;
+            color: #bab3b3;
+        }
+
+        a.logo:hover {
+            color: #fff;
+        }
+
+        nav.scrolled {
+            background-color: rgb(38, 38, 38);
+            /* Mengubah warna menjadi gelap saat scroll */
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+
+        /* Style untuk link navbar */
+        nav a {
+            color: #bab3b3;
+            text-decoration: none;
+            padding: 10px 15px;
+            display: inline-block;
+        }
+
+        nav a:hover {
+            color: #fff;
+
+        }
+
+        /* Style konten */
+        .content {
+            margin-top: 20px;
+            /* Memberikan ruang untuk navbar yang tetap di atas */
+            padding: 20px;
+            height: 650px;
+            /* Untuk membuat halaman cukup panjang untuk scroll */
+            background: #fffbe7;
+        }
+
+        .ul {
+            display: table;
+            width: 100%;
+            border-collapse: collapse;
+            padding: 120px;
+        }
+
+        .li {
+            display: table-row;
+            margin: 15px;
+
+        }
+
+        .span {
+            display: table-cell;
+            padding: 8px;
+
+        }
+
+
+
+        /* Style konten */
+        .conten {
+            margin-top: 20px;
+            /* Memberikan ruang untuk navbar yang tetap di atas */
+            padding: 20px;
+            height: 650px;
+            /* Untuk membuat halaman cukup panjang untuk scroll */
+            background: #c5beb5;
+        }
+
+        div.img {
+            position: relative;
+        }
+
+        div.text {
+            position: absolute;
+            top: 45%;
+            color: #ffffff;
+            padding-left: 600px;
+        }
+
+        div.tex {
+            position: absolute;
+            top: 80%;
+            right: 25px;
+            padding-left: 600px;
+        }
+
+        table {
+            border-spacing: 10px;
+        }
+
+        h4.s {
+            font-size: 72px;
+            color: rgb(38, 38, 38);
+        }
+
+        p.n {
+            font-size: 55px;
+            color: #ff009d;
+
+        }
+    </style>
+
+
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav id="navbar">
+        <a href="#qq" class="logo">samsul kw</a>
+        <ul>
+            <a href="#pendidikan">Pendidikan</a>
+            <a href="#buku">Buku</a>
+            <a href="#lagu">Lagu</a>
+            <a href="#film">Film</a>
+            <a href="#makan">Makanan</a>
+        </ul>
+
+    </nav>
+
+    <div class="img" id="qq">
+        <img src="Sam.jpg" alt="ya" width="100%">
+        <div class="text">
+            <h4 class="s">M.SYAMSUL</h4>
+            <H4 class="s">RIZAL</H4>
+            <p class="n">6304230059</p>
+        </div>
+        <div class="tex">
+            <p>Saya berasal dari Bengkalis, sebuah kota yang terletak di Provinsi Riau, Indonesia. Bengkalis dikenal
+                dengan keindahan alamnya dan budaya yang kental, tempat di mana saya tumbuh dan berkembang.</p>
+        </div>
+    </div>
+
+
+
+    <!-- pendidikan -->
+    <div class="content">
+        <H2 align="center" id="pendidikan">RIWAYAT PENDIDIKAN</H2>
+        <br>
+        <hr>
+        <br>
+
+        <div class="list">
+            <ul type="none">
+                <li>
+                    <img src="sekolah PAUD.jpeg" alt="" align="center" height="175px" width="175px">
+                    <H3 align="center" >PAUD</H3>
+                    <P>PAUD AISYAH TELUK LATAK</P>
+                </li>
+                <li>
+                    <img src="The Scool SMP kenangan.jpeg" alt="" height="175px" width="175px">
+                    <h3>SMPN</h3>
+                    <P>SMPN 4 BENGKALIS</P>
+                </li>
+            </ul>
+            <ul type="none">
+                <LI>
+                    <img src="download (3).jpeg" alt="" height="175px" width="175px">
+                    <H3>TK</H3>
+                    <P>TK AISYAH TELUK LATAK</P>
+                </LI>
+                <li>
+                    <img src="smk.jpeg" alt="" height="175px" width="175px">
+                    <h3>SMKN</h3>
+                    <P>SMKN 3 BENGKALIS</P>
+                </li>
+            </ul>
+            <ul type="none">
+                <li>
+                    <img src="Jangan di like.jpeg" alt="" height="175px" width="175px">
+                    <h3>SD</h3>
+                    <P>SDN 47 TELUK LATAK</P>
+                </li>
+                <li>
+                    <img src="3 Prodi Polbeng Lolos Menerima Bantuan Dana Pengembangan Program DII Fast Track.jpeg"
+                        alt="" height="175px" width="175px">
+                    <h3>KULIAH</h3>
+                    <P>POLITEKNIK NEGERI BENGKALIS</P>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!-- end pendidikan -->
+
+    <!-- start buku -->
+    <div class="conten">
+        <H2 align="center" id="buku">5 BUKU TERVAFORIT</H2>
+        <br>
+        <hr color="black">
+        <br>
+
+        <div class="list">
+            <ul class="ul">
+                <li class="li">
+                    <span class="span" align="center">
+                        <img src="Dilan1990 (Dilan1).jpeg" width="175px" height="230px" alt="">
+                        <h5>Dilan: 1990</h5>
+                        <p>Penulis : Pidi Baiq</p>
+                    </span>
+                    <span class="span" align="center">
+                        <img src="Dilan1991 (Dilan2).jpeg" width="175px" height="230px" alt="">
+                        <h5>Dilan: 1991</h5>
+                        <p>Penulis : Pidi Baiq</p>
+                    </span>
+                    <span class="span" align="center">
+                        <img src="Milea.jpeg" width="175px" height="230px" alt="">
+                        <h5>Milea: Suara dari Dilan</h5>
+                        <p>Penulis : Pidi Baiq</p>
+                    </span>
+                    <span class="span" align="center">
+                        <img src="perahu.jpeg" width="175px" height="230px" alt="">
+                        <h5>Perahu Kertas</h5>
+                        <p>Penulis : Dee Lestari</p>
+                    </span>
+                    <span class="span" align="center">
+                        <img src="juni.jpeg" width="175px" height="230px" alt="">
+                        <h5>Hujan di Bulan Juni</h5>
+                        <p>Penulis : Supardi Djoko Damono</p>
+                    </span>
+                </li>
+            </ul>
+
+        </div>
+    </div>
+    <!-- end buku -->
+
+    <!-- start lagu -->
+    <div class="conte">
+        <H2 align="center" id="lagu">5 LAGU TERVAFORIT</H2>
+        <br>
+        <hr color="black">
+        <br>
+
+        <div class="list">
+            <ul class="ul">
+                <li class="li">
+                    <span class="span" align="center">
+                        <img src="/untung nya.jpeg" width="175px" height="230px" alt="">
+                        <h5>UNTUNG NYA </h5>
+                       
+                    </span>
+                    <span class="span" align="center">
+                        <img src="/dere.jpeg" width="175px" height="230px" alt="">
+                        <h5>KOTA - DERE</h5>
+                    </span>
+                    <span class="span" align="center">
+                        <img src="/Satu Bulan.jpeg" width="175px" height="230px" alt="">
+                        <h5>SATU BULAN</h5>
+                    </span>
+                    <span class="span" align="center">
+                        <img src="/Jiwa Yang Bersedih.jpeg" width="175px" height="230px" alt="">
+                        <h5>JIWA YANG BERSEDIH</h5>
+                    </span>
+                    <span class="span" align="center">
+                        <img src="/selamat tinggal.jpeg" width="175px" height="230px" alt="">
+                        <h5>SELAMAT TINGGAL</h5>
+                       
+                    </span>
+                </li>
+            </ul>
+
+        </div>
+    </div>
+    <!-- end lagu -->
+
+    <!-- start film -->
+    <div class="cont">
+        <H2 align="center" id="film">5 FILM TERVAFORIT</H2>
+        <br>
+        <hr color="black">
+        <br>
+
+        <div class="list">
+            <ul class="ul">
+                <li class="li">
+                    <span class="span" align="center">
+                        <img src="/fdilan1.jpeg" width="175px" height="230px" alt="">
+                        <h5>DILAN 1990</h5>
+                       
+                    </span>
+                    <span class="span" align="center">
+                        <img src="/fdilan2.jpeg" width="175px" height="230px" alt="">
+                        <h5>DILAN 1991</h5>
+                    </span>
+                    <span class="span" align="center">
+                        <img src="/fdilan3.jpeg" width="175px" height="230px" alt="">
+                        <h5>MILEA : SUARA DARI DILAN</h5>
+                    </span>
+                    <span class="span" align="center">
+                        <img src="/fpk.jpeg" width="175px" height="230px" alt="">
+                        <h5>PERAHU KERTAS</h5>
+                    </span>
+                    <span class="span" align="center">
+                        <img src="/Hujan Bulan Juni ; 2017.jpeg" width="175px" height="230px" alt="">
+                        <h5>HUJAN DI BULAN JUNI</h5>
+                       
+                    </span>
+                </li>
+            </ul>
+
+        </div>
+    </div>
+    <!-- end film -->
+
+    <!-- start makan -->
+    <div class="con">
+        <H2 align="center" id="makan">5 MAKANAN TERVAFORIT</H2>
+        <br>
+        <hr color="black">
+        <br>
+
+        <div class="list">
+            <ul class="ul">
+                <li class="li">
+                    <span class="span" align="center">
+                        <img src="/bakso.jpeg" width="175px" height="175px" alt="">
+                        <h5>BAKSO</h5>
+                       
+                    </span>
+                    <span class="span" align="center">
+                        <img src="/Mie Ayam.jpeg" width="175px" height="175px" alt="">
+                        <h5>MIE AYAM</h5>
+                    </span>
+                    <span class="span" align="center">
+                        <img src="/mie.jpeg" width="175px" height="175px" alt="">
+                        <h5>MIE GORENG</h5>
+                    </span>
+                    <span class="span" align="center">
+                        <img src="/pempek.jpeg" width="175px" height="175px" alt="">
+                        <h5>MPEMPEK PALEMBANG</h5>
+                    </span>
+                    <span class="span" align="center">
+                        <img src="/lontong.jpeg" width="175px" height="175px" alt="">
+                        <h5>LONTONG SAYUR</h5>
+                       
+                    </span>
+                </li>
+            </ul>
+
+        </div>
+    </div>
+    <!-- end makan -->
+    
+
+    <!-- start JavaScript -->
+    <script>
+        // Ambil elemen navbar
+        const navbar = document.getElementById("navbar");
+
+        // Fungsi untuk menambah/menghapus kelas "scrolled" saat scroll
+        window.onscroll = function () {
+            if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+                navbar.classList.add("scrolled");
+            } else {
+                navbar.classList.remove("scrolled");
+            }
+        };
+    </script>
+    <!-- end start -->
+
+</body>
+
+</html>
